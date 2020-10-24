@@ -1,0 +1,64 @@
+
+
+@function hover-color($base-color) { @return shade($base-color, 8%); }
+
+@function focus-color($base-color) { @return shade($base-color, 16%); }
+
+@function active-color($base-color) { @return shade($base-color, 24%); }
+
+@function color-for-state($state, $base-color: $action-color) {
+  @if($state == hover) { @return hover-color($base-color); }
+  @else if($state == focus) { @return focus-color($base-color); }
+  @else if($state == active) { @return active-color($base-color); }
+  @else { @return hover-color($base-color); }
+}
+
+@mixin apply-state-color-changes-to-properties($properties: (background-color, border-color), $color: $action-color) {
+
+  $_this-color: $color;
+  $_hover-color: hover-color($_this-color);
+  $_focus-color: focus-color($_this-color);
+  $_active-color: active-color($_this-color);
+
+  &:hover {
+    @each $property in $properties {
+      #{$property}: $_hover-color;
+    }
+  }
+  &:focus {
+    outline: none;
+    @each $property in $properties {
+      #{$property}: $_focus-color;
+    }
+  }
+  &:active {
+    @each $property in $properties {
+      #{$property}: $_active-color;
+    }
+  }
+}
+
+@mixin min-width($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin minimum-width($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin minWidth($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin breakpoint($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+

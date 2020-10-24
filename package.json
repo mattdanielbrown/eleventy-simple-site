@@ -14,9 +14,9 @@
     "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Matt Daniel Brown",
+    "email": "dev@mattbrown.email",
+    "url": "https://mattbrown.codes"
   },
   "license": "MIT",
   "bugs": {
@@ -27,9 +27,15 @@
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "luxon": "^1.21.3",
-    "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.2.5"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "eleventy-plugin-sass": "^1.1.1",
+    "luxon": "^1.25.0",
+    "markdown-it": "^12.0.2",
+    "markdown-it-anchor": "^6.0.0"
+  },
+  "dependencies": {
+    "bourbon": "^7.0.0",
+    "modern-normalize": "^1.0.0",
+    "modularscale-sass": "^3.0.10"
   }
 }

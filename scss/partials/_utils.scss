@@ -1,0 +1,81 @@
+
+
+@function color-faded-opacity($base-color: $action-color, $opacity: 0.5) {
+  @return rgba($base-color, $opacity);
+}
+
+@function custom-focus-effect-for-color($base-color: $action-color) {
+  @return $custom-focus-effect-shadow rgba($base-color, 0.5);
+}
+
+%list-reset {
+  list-style: none;
+  padding : 0;
+  margin : 0;
+  li {
+    list-style: none;
+    padding : 0;
+    margin : 0;
+  }
+}
+
+%container {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+%button-base {
+
+  $_this-color: $default-button-background-color;
+
+  appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.0) !important;
+
+
+
+  background-color : $_this-color;
+  border: $_this-color solid 2px;
+
+  border-radius: var(--border-radius);
+  //color: $action-color--contrast;
+  color: $default-button-text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-family-base);
+  font-size: 1.25rem;
+  //-webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: var(--spacing--small) var(--spacing);
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--duration) var(--timing);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover {
+    //background-color: $action-color--alt;
+    background-color : hover-color($_this-color);
+    border-color : hover-color($_this-color);
+  }
+  &:focus {
+    //outline: var(--focus-outline);
+    //outline-offset: var(--focus-outline-offset);
+    outline: 0;
+    background-color : focus-color($_this-color);
+    border-color : focus-color($_this-color);
+    box-shadow: custom-focus-effect-for-color($_this-color);
+  }
+  &:active {
+    background-color : active-color($_this-color);
+    border-color : active-color($_this-color);
+    transform: translateY(2px);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

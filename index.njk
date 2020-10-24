@@ -8,6 +8,71 @@ eleventyNavigation:
 {% set maxPosts = collections.posts.length | min(3) %}
 <h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
+<section>
+  <h4>Some HTML Elements</h4>
+  <br>
+  <button type="button">Default</button>
+  <button type="button" class="primary">Primary</button>
+  <button type="button" class="secondary">Secondary</button>
+</section>
+
+<section>
+  <h3>Section Title</h3>
+  <h4>Section Subtitle</h4>
+
+  <h5>Subsection Title</h5>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Ab accusamus animi, blanditiis dolore
+     dolorum ea expedita harum molestiae, possimus
+     velit veniam vero? Eius eos eum, fuga hic maiores quaerat temporibus!
+     nihil quae quasi reiciendis rem sed similique sit sunt totam!
+     Expedita harum illum ipsum nemo quam soluta, ut. Adipisci amet aspernatur
+     consequatur dolorem ducimus earum hic in itaque laudantium mollitia neque
+     nesciunt nihil nisi non placeat quia quod, recusandae reiciendis rem rerum
+     sed ullam ut vel vero.</p>
+  <p>Architecto, cum cumque dolorem, dolorum, earum fugit libero maxime
+     molestias nam neque nihil quae quasi reiciendis rem sed similique sit
+     sunt totam</p>
+
+  <h5>Subsection Title</h5>
+  <p>At corporis distinctio dolores, eos est iusto nesciunt nisi sint.
+     Aspernatur esse inventore laudantium maxime nesciunt nihil non omnis saepe,
+     soluta voluptatem. Architecto, cum cumque dolorem, dolorum, earum fugit
+     libero maxime molestias nam neque nihil quae quasi reiciendis rem sed
+     similique sit sunt totam! Expedita harum illum ipsum nemo quam soluta, ut.
+     Adipisci amet aspernatur consequatur dolorem ducimus earum hic in itaque
+     laudantium mollitia neque nesciunt nihil nisi non placeat quia quod,
+     recusandae reiciendis rem rerum sed ullam ut vel vero voluptates.</p>
+</section>
+
+<section>
+  <h3>Form Inputs</h3>
+
+  <form action="">
+    <fieldset>
+      <div class="form-control">
+        <label for="text-input">Text Input</label>
+        <input type="text" id="text-input" name="text-input" placeholder="Text Input">
+      </div>
+      <div class="form-control">
+        <label for="email-input">Email Input</label>
+        <input type="email" id="email-input" name="email-input" placeholder="user@example.com">
+      </div>
+      <div class="form-control">
+        <label for="password-input">Password Input</label>
+        <input type="password" id="password-input" name="password-input" placeholder="Password Input">
+      </div>
+      <div class="form-control">
+        <label for="textarea-input">Multi-line Textarea</label>
+        <textarea name="textarea-input" id="textarea-input" cols="30" rows="10" placeholder="Multiline Text Input"></textarea>
+      </div>
+      <div class="form-control">
+        <input type="submit" class="primary" value="Submit Form">
+      </div>
+    </fieldset>
+  </form>
+</section>
+
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}

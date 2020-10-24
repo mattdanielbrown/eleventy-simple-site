@@ -1,0 +1,103 @@
+
+button, .button, [type="button"], [type="reset"], [type="submit"] {
+  @extend %button-base;
+
+  line-height : 0 !important;
+  vertical-align : middle !important;
+  padding : 1em 1.5em;
+  letter-spacing : 1px;
+  @include apply-state-color-changes-to-properties($default-button-background-color);
+
+  &.primary {
+    $_this-color: $action-color;
+    background-color: $_this-color;
+    color: white;
+    border-color: $_this-color;
+    @include apply-state-color-changes-to-properties($action-color);
+
+    &:hover {
+      //background-color: $action-color--alt;
+      background-color : hover-color($_this-color);
+      border-color : hover-color($_this-color);
+    }
+    &:focus {
+      //outline: var(--focus-outline);
+      //outline-offset: var(--focus-outline-offset);
+      outline: 0;
+      background-color : focus-color($_this-color);
+      border-color : focus-color($_this-color);
+      box-shadow: custom-focus-effect-for-color($_this-color);
+    }
+    &:active {
+      background-color : active-color($_this-color);
+      border-color : active-color($_this-color);
+    }
+
+  }
+  &.secondary {
+    $_this-color: $secondary-color;
+    background-color: $_this-color;
+    color: white;
+    border-color: $_this-color;
+    @include apply-state-color-changes-to-properties($secondary-color);
+
+    &:hover {
+      //background-color: $action-color--alt;
+      background-color : hover-color($_this-color);
+      border-color : hover-color($_this-color);
+    }
+    &:focus {
+      //outline: var(--focus-outline);
+      //outline-offset: var(--focus-outline-offset);
+      outline: 0;
+      background-color : focus-color($_this-color);
+      border-color : focus-color($_this-color);
+      box-shadow: custom-focus-effect-for-color($_this-color);
+    }
+    &:active {
+      background-color : active-color($_this-color);
+      border-color : active-color($_this-color);
+    }
+
+  }
+
+
+}
+
+#{$all-text-inputs} {
+  border-color: lightgray;
+  border-width: 2px;
+  font-size : 1.125rem;
+  line-height : 1.25 !important;
+  padding : .75rem;
+  transition: all 100ms ease;
+  &:focus {
+    border-color: $action-color;
+    box-shadow: 0 0 0 4px rgba($action-color, .12);
+    outline: none;
+  }
+  &:active {
+
+  }
+}
+.form-control {
+  margin-top : .5rem;
+  margin-bottom : 1.5rem;
+  transition: all 100ms ease;
+  &:hover {
+    label {
+      color: $action-color;
+    }
+    input, textarea {
+      background : tint($action-color, 98%);
+    }
+  }
+}
+
+label {
+  transition: all 100ms ease;
+  cursor : pointer;
+  &:hover {
+    color: $action-color;
+  }
+}

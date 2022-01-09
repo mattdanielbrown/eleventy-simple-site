@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2796dae3-4249-47c2-b84c-def06434706f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eleventy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/base.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/base.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.njk" beforeDir="false" afterPath="$PROJECT_DIR$/index.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/vendor/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/vendor/base/_variables.scss" afterDir="false" />
-    </list>
+    <list default="true" id="2796dae3-4249-47c2-b84c-def06434706f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603548407415</updated>
-      <workItem from="1603548409550" duration="5798000" />
+      <workItem from="1603548409550" duration="7528000" />
     </task>
     <servers />
   </component>

@@ -34,7 +34,7 @@
     "markdown-it-anchor": "^6.0.1"
   },
   "dependencies": {
-    "bourbon": "^7.0.0",
+    "bourbon": "^7.2.0",
     "modern-normalize": "^1.0.0",
     "modularscale-sass": "^3.0.10"
   }

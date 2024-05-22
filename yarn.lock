@@ -1302,10 +1302,10 @@ electron-to-chromium@^1.3.571:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.583.tgz#47a9fde74740b1205dba96db2e433132964ba3ee"
   integrity sha512-L9BwLwJohjZW9mQESI79HRzhicPk1DFgM+8hOCfGgGCFEcA3Otpv7QK6SGtYoZvfQfE3wKLh0Hd5ptqUFv3gvQ==
 
-eleventy-plugin-sass@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-sass/-/eleventy-plugin-sass-1.1.1.tgz#41d97ed3a6a1e7316f7e06d78040544492442efa"
-  integrity sha512-nBIitw4NT4o2avp2pDiPR+N3yiy4xZmw5CuUdeyWAQ+DOIJAJ+FVLQZ0wPwUaM5mNA5dqL/6b9IHHo7yzWVVCg==
+eleventy-plugin-sass@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-sass/-/eleventy-plugin-sass-1.2.0.tgz#57e5fd08d6f4f7279ab38d93406bcc9c6c5631ad"
+  integrity sha512-uWylsKXIZd0TZUgUHEuz4IxKz1ogwJu3z1zVync7PK4MUlhLcLAxJQ1T5y4IVzw6L0IkhA2gmkaj4A1p8RvQtQ==
   dependencies:
     chalk "^2.4.2"
     chokidar "^3.2.1"
